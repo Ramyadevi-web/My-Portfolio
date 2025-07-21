@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
+import girl2 from './assets/girl2.png';
 
 function About() {
   return (
@@ -10,7 +11,7 @@ function About() {
      </div>
     <div className='row align-items-center'>
       <div className='col-12 col-md-6 mb-4 mb-md-0 d-flex justify-content-center align-items-center'>
-        <img src="src/assets/girl2.png" className='image-fluid rounded custom-img' alt='Girl Image'></img>
+        <img src={girl2} className='image-fluid rounded custom-img' alt='Girl Image'></img>
       </div>
       <div className='col-12 col-md-6 text-white px-4'>
         <p className='responsive-pre'>       
