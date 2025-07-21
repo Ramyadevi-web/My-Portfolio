@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
-import girl2 from './assets/girl2.png';
+import girl2 from '../assets/girl2.png';
 
 function About() {
   return (
