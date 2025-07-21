@@ -1,0 +1,407 @@
+.main-header{
+    background-color: transparent;
+    z-index: 999;
+    transition: all 0.5s ease;   
+    width: 100%;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.scroll{
+   background-color: rgb(153, 153, 255);
+   position:fixed;
+}
+
+.logo-img{
+    height: 85px;
+    width: 100px;
+    object-fit: cover;
+}
+
+@media (max-width: 576px){
+    .logo-img{
+        height: 30px;
+        width: 30px;;
+    }
+}
+
+.nav-link{
+    transition: font-size color font-weight 0.3s ease;
+}
+
+.nav-link:hover{
+   font-size: 180% !important;
+   color : #2a1b9e ;
+   font-weight: 500;
+}
+
+#home-img{
+    width: 40%;
+    height: 95%;
+}
+
+#home-span{
+   color: #00bcd4;
+   font-weight: bold;
+   font-size: 3.5rem;
+}
+
+.content-div{
+    height: 80vh;
+}
+
+.even-div{
+    background-color: #200e41f5;
+}
+
+.odd-div{
+    background-color:#13042df5;
+}
+
+.content-div > div{
+    width: 50%;
+}
+
+@media (max-width:768px){
+   .content-div{
+    flex-direction: column;
+   }
+}
+
+.home-left-content > p:first-child{
+    font-size: 2rem;
+    color : white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.home-left-content > p:not(:first-child){
+    font-size: 3.5rem;
+    color : white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.social-icons{
+    color : #00bcd4;
+    margin: 5%;
+}
+
+.social-icons > span{
+    padding: 10px;
+}
+
+.home-left-content{
+    line-height: 1;
+   padding-left: 20%;
+   padding-bottom: 5%;
+}
+
+
+.small-text{
+    font-size: 1rem;
+    color: white;
+}
+
+.pointer{
+    cursor: pointer;
+    transition: font-size 0.2s ease-in;
+}
+
+#resume-download{
+    cursor: pointer;
+    transition: font-size 0.2s ease-in;
+}
+
+#resume-download:hover{
+    color: white;
+    font-size: 1.3rem;
+}
+
+.pointer:hover{
+    color: white;
+    font-size: 2.3rem;
+}
+
+.white-text{
+    color: white;
+}
+
+.home-left-content{
+    line-height: 1;
+   padding-left: 20%;
+   padding-bottom: 5%;
+}
+
+
+.small-text{
+    font-size: 1rem;
+    color: white;
+}
+
+.pointer{
+    cursor: pointer;
+    transition: font-size 0.2s ease-in;
+}
+
+#resume-download{
+    cursor: pointer;
+    transition: font-size 0.2s ease-in;
+}
+
+#resume-download:hover{
+    color: white;
+    font-size: 1.3rem;
+}
+
+.pointer:hover{
+    color: white;
+    font-size: 2.3rem;
+}
+
+.main-header{
+    background-color: transparent;
+    z-index: 999;
+    transition: all 0.5s ease;   
+}
+
+.scroll{
+   background-color: rgb(153, 153, 255);
+   position:fixed;
+}
+
+.logo-img{
+    height: 85px;
+    width: 100px;
+    object-fit: cover;
+}
+
+@media (max-width: 576px){
+    .logo-img{
+        height: 30px;
+        width: 30px;;
+    }
+}
+
+.nav-link{
+    transition: font-size color font-weight 0.3s ease;
+}
+
+.nav-link:hover{
+   font-size: 180% !important;
+   color : #13042df5;
+   font-weight: 500;
+}
+
+#home-img{
+    width: 40%;
+    height: 95%;
+}
+
+#home-span{
+   color: #00bcd4;
+   font-weight: bold;
+   font-size: 3.5rem;
+}
+
+.home-div{
+    height: 80vh;
+    background-color:#13042df5;
+}
+
+.home-div > div{
+    width: 50%;
+}
+
+@media (max-width:768px){
+   .home-div{
+    flex-direction: column;
+   }
+}
+
+.home-left-content > p:first-child{
+    font-size: 2rem;
+    color : white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.home-left-content > p:not(:first-child){
+    font-size: 3.5rem;
+    color : white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.social-icons{
+    color : #00bcd4;
+    margin: 5%;
+}
+
+.social-icons > span{
+    padding: 10px;
+}
+
+.blue-text{
+    color: #00bcd4;
+}
+
+.pre-container{
+    font-size: 1rem;
+}
+
+.responsive-pre{
+    line-height: 1.6;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+
+@media (min-width : 768px){
+    .responsive-pre{
+    font-size: 1.2rem;
+    }
+}
+
+@media (min-width : 1024px){
+    .responsive-pre{
+    font-size: 1.5rem;
+    }
+}
+
+.skills-container{
+    height: 90vh;
+    padding: 50px;
+}
+
+.skill-card{
+    width: 150px;
+    height: 150px; 
+    border-radius: 7px;
+}
+
+   .skill-logo{
+    height: 60px;
+    width: 60px;
+   }
+
+@media (min-width:768px){
+    .skill-card{
+    width: 170px;
+    height: 125px;
+   }
+
+   .skill-logo{
+    height: 40%;
+    width: 40%;
+   }
+}
+
+.custom-img{
+    max-height: 500px;
+    width: auto;
+    height: auto;
+}
+
+.skill-card:hover{
+    background-color: #00bcd4;
+    cursor: pointer;
+}
+
+.project-button{
+    background-color: aqua;
+    color: black;
+    border-radius: 4px;
+    height: 30px;
+    box-shadow: 1px 1px 4px 2px aqua;
+    cursor: pointer;
+}
+
+.front-code-button{
+    background-color: #200e41f5;
+    color: white;
+    border-radius: 4px;
+    height: 30px;
+    box-shadow: 1px 0px 5px 1px  white;
+    cursor: pointer;
+}
+
+.front-code-button:hover{
+  background-color: #13042df5; 
+  transform: scale(1.05); 
+  color: #0097a7;
+}
+
+.project-image{
+    max-height: 400px;
+    width: 350px;
+    height: auto;
+}
+
+.project-button:hover, .send-email:hover{
+  background-color: #0097a7; 
+  transform: scale(1.05); 
+  color: #ffffff;
+}
+
+.tech-button{
+    background-color: rgb(84, 97, 97);
+    color: #ffff;
+    border-radius: 15px;
+    height: 0px;
+}
+
+.text-field{
+    width: 500px;
+    height: 30px;
+}
+
+.text-area{
+    width: 500px;
+    height: 80px;
+}
+
+.form-field::placeholder{
+    color : grey !important;
+}
+
+.form-field{
+    background-color: rgba(34, 33, 33, 0.637) !important;
+    color : white !important;
+}
+
+.send-email{
+    background-color: aqua;
+    color: black;
+    border-radius: 12px;
+    height: 30px;
+    box-shadow: 1px 1px 4px 2px aqua;
+    cursor: pointer;
+    width: 150px;
+}
+
+.footer{
+    height: 40px;
+    color: #59575b;
+}
+
+body{
+     position: relative;
+}
+
+
+.up-arrow{
+    background-color: aqua;
+    border: 1px solid aqua;
+    border-radius: 50%;
+    width: 50px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
