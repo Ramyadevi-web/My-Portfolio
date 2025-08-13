@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { useState,useEffect } from 'react'
-import logo from "../assets/R1.png";
+import logo from "/R1.png";
 
 function Header() {
 
