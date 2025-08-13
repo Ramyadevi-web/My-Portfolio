@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { useState,useEffect } from 'react'
-import logo from "/R1.png";
+// import logo from "/R1.png";
 
 function Header() {
 
@@ -23,7 +23,7 @@ function Header() {
     <section className={`main-header ${scrolled ? 'scroll' : ''}`}  id='header-section'>
      <Navbar expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#home" className='fs-3 fw-bold d-flex'><img src = {logo} alt = "logo" className="logo-img"/>
+        <Navbar.Brand href="#home" className='fs-3 fw-bold d-flex'><img src = "/R1.png" alt = "logo" className="logo-img"/>
         <div className=' d-flex flex-column'>
           <span>RAMYA DEVI M</span>
           <span className='fs-5'>Fullstack Web Developer</span>
