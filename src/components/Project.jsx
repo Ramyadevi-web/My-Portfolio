@@ -1,9 +1,9 @@
 import React from 'react'
-import attendance from '../assets/attendance.png'
-import CRUD from '../assets/CRUD.png'
-import todo from '../assets/todo.png'
-import router from '../assets/router.png'
-import shop from '../assets/shop.png'
+// import attendance from '../assets/attendance.png'
+// import CRUD from '../assets/CRUD.png'
+// import todo from '../assets/todo.png'
+// import router from '../assets/router.png'
+// import shop from '../assets/shop.png'
 
 function Project() {
 
@@ -30,7 +30,7 @@ function Project() {
       {/* Attendance Portal Project */}
      <div className='row'>
         <div className='col-12 col-lg-6 order-lg-1 d-flex justify-content-center'>
-         <img src={attendance} className='project-image' alt='project screenshot'/>
+         <img src="/attendance.png" className='project-image' alt='project screenshot'/>
         </div>
         <div className='col-12 mt-4 col-lg-6 mt-lg-0 justify-content-center align-items-center align-content-center 
          justify-items-center'>
@@ -83,7 +83,7 @@ function Project() {
      {/* Axios CRUD */}
       <div className='row mt-5'>
         <div className='col-12 col-lg-6 d-flex justify-content-center'>
-         <img src={CRUD} className='project-image order-lg-2' alt='project screenshot'/>
+         <img src="/CRUD.png" className='project-image order-lg-2' alt='project screenshot'/>
         </div>
         <div className='col-12 mt-4 col-lg-6 mt-lg-0 justify-content-center align-items-center align-content-center 
          justify-items-center'>
@@ -127,7 +127,7 @@ function Project() {
      {/* Todo App */}
       <div className='row mt-5'>
         <div className='col-12 col-lg-6 order-lg-2 d-flex justify-content-center'>
-         <img src={todo} className='project-image' alt='project screenshot'/>
+         <img src="/todo.png" className='project-image' alt='project screenshot'/>
         </div>
         <div className='col-12 mt-4 col-lg-6 mt-lg-0 justify-content-center align-items-center align-content-center 
          justify-items-center'>
@@ -171,7 +171,7 @@ function Project() {
       {/* React Router Demo */}
         <div className='row mt-5'>
         <div className='col-12 col-lg-6 d-flex justify-content-center order-lg-1'>
-         <img src={router} className='project-image ' alt='project screenshot'/>
+         <img src="/router.png" className='project-image ' alt='project screenshot'/>
         </div>
         <div className='col-12 mt-4 col-lg-6 mt-lg-0 justify-content-center align-items-center align-content-center 
          justify-items-center order-lg-2'>
@@ -216,7 +216,7 @@ function Project() {
 
        <div className='row mt-5'>
         <div className='col-12 col-lg-6 d-flex justify-content-center order-lg-2'>
-         <img src={shop} className='project-image' alt='project screenshot'/>
+         <img src="/shop.png" className='project-image' alt='project screenshot'/>
         </div>
         <div className='col-12 mt-4 col-lg-6 mt-lg-0 justify-content-center align-items-center align-content-center 
          justify-items-center'>

@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
-import girl1 from '../assets/girl1.png'
+// import girl1 from '../assets/girl1.png'
 
 function Home() {
   return (
@@ -35,7 +35,7 @@ function Home() {
 
         {/* Right Section (Image) */}
         <div className='col-12 col-md-6 d-flex justify-content-center'>
-          <img src={girl1} alt="Girl" className='image-fluid custom-img'/>
+          <img src="/girl1.png" alt="Girl" className='image-fluid custom-img'/>
         </div>
       </div>
 
