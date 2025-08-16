@@ -49,7 +49,7 @@ function Project() {
                 It provides role-based access for admins, teachers, and students, ensuring secure and efficient record keeping. 
                 Built using the MERN stack for a seamless full-stack experience.
             </p>
-            <div className='d-flex'>
+            <div className='d-flex tech-stack'>
                 {
                     techStack.map((tech,index)=>(
                         <div className='tech-button ps-2 pt-3 pb-3 pe-2 me-2 d-flex align-content-center
