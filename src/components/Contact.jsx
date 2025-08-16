@@ -39,13 +39,14 @@ function Contact() {
      <div  className='d-flex justify-content-center'>
         <Form ref = {form} onSubmit = {sendEmail}>
         <Form.Group className="mb-4 form-field" controlId="exampleForm.ControlInput1">
-            <Form.Control type="email" placeholder="Your Name" className='form-field'/>
+            <Form.Control type="email" placeholder="Your Name" className='form-field' name='name'/>
         </Form.Group>
         <Form.Group className="mb-4 form-field" controlId="exampleForm.ControlInput1">
-            <Form.Control type="email" placeholder="Subject" className='form-field'/>
+            <Form.Control type="email" placeholder="Subject" className='form-field' name='subject'/>
         </Form.Group>
         <Form.Group className="mb-4 mt-4 text-area" controlId="exampleForm.ControlTextarea1">
-            <Form.Control as="textarea" placeholder="Your Message" className='form-field' rows={3} />
+            <Form.Control as="textarea" placeholder="Your Message" className='form-field' 
+            name = 'message' rows={3} />
         </Form.Group>
         </Form>  
      </div>
