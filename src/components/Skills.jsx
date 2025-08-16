@@ -71,11 +71,11 @@ function Skills() {
              <div className='skill-card d-flex flex-column justify-content-center  align-items-center'
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
-                  style={{border:item.border,
-                  boxShadow:item.boxShadow,
+                  style={{border : item.border,
+                  boxShadow : item.boxShadow,
                   backgroundColor : hoveredIndex === index ? "#200e41f5" : "transparent",
-                  width : hoveredIndex === index ? "0px" : "150px",
-                  height : hoveredIndex === index ? "160x" : "150px",
+                  width : hoveredIndex === index ? "160px" : "150px",
+                  height : hoveredIndex === index ? "160px" : "150px",
                   transition: "background-color 0.3s ease"}}>
              <img src={`src/assets/${item.imgName}`} className='image-fluid skill-logo mt-3 mb-4'/>
               <span className='white-text fw-bold mb-3'>{item.skillName}</span>
