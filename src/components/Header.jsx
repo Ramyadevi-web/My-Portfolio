@@ -8,16 +8,71 @@ import { useState,useEffect } from 'react'
 function Header() {
 
   const [scrolled,setScrolled] = useState(false)
+  const [activeTab,setActiveTab] = useState('home')
+
+  let isClicking = false;
+  let scrollTimeout;
 
   useEffect(()=>{
     const onScroll = ()=>{
+
+      if(isClicking) return; //To prevent the scroll event;
+
+      isClicking = false;
+
       setScrolled(window.scrollY > 50);
+
+      const sectionIds = ['home', 'skills', 'project', 'contact'];
+
+      for(const sectionId of sectionIds){
+        const element  = document.getElementById(sectionId);
+
+        if(element){
+           const sectionTop = element.offsetTop;
+           const sectionHeight = element.offsetHeight;
+
+           if(window.scrollY >= sectionTop - sectionHeight/3 &&
+            window.scrollY < sectionTop + sectionHeight - sectionHeight / 3){
+              setActiveTab(sectionId);
+              break;
+           }
+        }
+           
+      }
     }
 
     window.addEventListener('scroll',onScroll)
 
     return () => window.removeEventListener('scroll',onScroll)
   },[])
+
+
+  const handleClick = (sectionId) => {
+
+    const element = document.getElementById(sectionId);
+
+    if(element) { 
+          isClicking = true;
+          element.scrollIntoView({behavior: 'smooth'});
+      const sectionTop = element.offsetTop - 80;
+      
+      setActiveTab(element)
+
+      clearTimeout(scrollTimeout);
+
+      scrollTimeout = setTimeout(() => {
+        isClicking = false;
+      }, 800)
+
+      window.scrollTo({
+        top: sectionTop,
+        behavior: 'smooth'
+      })
+    }
+  }
+ 
+
+
 
   return (
     <section className={`main-header ${scrolled ? 'scroll' : ''}`}  id='header-section'>
@@ -31,11 +86,11 @@ function Header() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
-            <Nav.Link href="#home" className='nav-link fs-4'>Home</Nav.Link>
-            <Nav.Link href="#home" className='nav-link fs-4'>Skills</Nav.Link>
-            <Nav.Link href="#projects" className='nav-link fs-4'>Projects</Nav.Link>
-            <Nav.Link href="#" className='nav-link fs-4'>Contact us</Nav.Link>
+          <Nav className="ms-auto" activeKey={activeTab}>
+            <Nav.Link onClick={() => { handleClick('home')}} className='nav-link fs-4' eventKey = 'home'>Home</Nav.Link>
+            <Nav.Link onClick={() => { handleClick('skills')}} className='nav-link fs-4' eventKey = 'skills'>Skills</Nav.Link>
+            <Nav.Link onClick={() => { handleClick('project')}} className='nav-link fs-4' eventKey = 'project'>Projects</Nav.Link>
+            <Nav.Link onClick={() => { handleClick('contact')}} className='nav-link fs-4' eventKey = 'contact'>Contact us</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

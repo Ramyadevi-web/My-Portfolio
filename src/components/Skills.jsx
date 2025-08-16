@@ -60,7 +60,7 @@ function Skills() {
     }
   ]
   return (
-    <section className='container-fluid odd-div py-5'>
+    <section className='container-fluid odd-div py-5' id='skills'>
      <div className='row justify-content-center text-white text-center mb-4 pb-4'>
          <h1>&lt;Skills <span className='blue-text'>/ </span>&gt;</h1>
      </div>

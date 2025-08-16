@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 
 function Home() {
   return (
-    <section className='container-fluid odd-div py-5'>
+    <section className='container-fluid odd-div py-5' id='home'>
       <div className='row align-items-center'>
         {/* Left Section */}
         <div className='col-12 col-md-6 mb-4 mb-md-0 d-flex flex-column justify-content-center align-items-center px-4'>
@@ -19,14 +19,30 @@ function Home() {
 
           <div  className='d-flex flex-column justify-content-center justify-items-center'>
           <div className='d-flex justify-items-center justify-content-center mb-3 social-icons'>
-            <span><i className="fa-brands fa-github fa-2x pointer me-3"></i></span>
-            <span><i className="fa-brands fa-linkedin fa-2x pointer me-3"></i></span>
-            <span><i className="fa-solid fa-square-envelope fa-2x pointer"></i></span>
+            <span>
+              <a href='https://github.com/Ramyadevi-web' target='_blank' rel='noopener noreferrer'>
+              <i className="fa-brands fa-github fa-2x pointer me-3"></i>
+              </a>
+            </span>
+            <span>
+              <a href='https://www.linkedin.com/in/ramya-devi-573833372/' target='_blank' rel='noopener noreferrer'>
+              <i className="fa-brands fa-linkedin fa-2x pointer me-3"></i>
+              </a>  
+            </span>
+            <span>
+            <a href='mailto:mramyadevi23@gmail.com' target='_blank' rel='noopener noreferrer'>
+              <i className="fa-solid fa-square-envelope fa-2x pointer"></i>
+            </a>
+            </span>
           </div>
 
           <div className='d-flex justify-items-center justify-content-center'>
             <Button variant="info" className='pointer' id='resume-download'>
-              <span>Download Resume</span>
+              <span>
+                <a href='https://drive.google.com/file/d/1MoUaiuhQlD72rXZyEoJPuYFcvkYa0txV/view?usp=sharing' target='_blank' download>
+                Download Resume
+                </a>
+              </span>
               <span className='ms-3'><i className="fa-solid fa-arrow-down"></i></span>
             </Button>
           </div>
