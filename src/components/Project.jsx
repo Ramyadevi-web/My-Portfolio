@@ -20,6 +20,11 @@ function Project() {
         'NodeJs',
         'Bootstrap'
     ]
+
+    const techStackTailwind = [
+      'ReactJs',
+      'TailwindCSS'
+    ]
   return (
      
 <section className="container-fluid even-div py-5" id='project'>
@@ -27,6 +32,77 @@ function Project() {
          <h1><span className='blue-text'>&lt;</span>My <span className='blue-text'>Projects /&gt;</span></h1>
      </div>
      <div className='container'>
+
+       {/* KCK Project */}
+     <div className='row'>
+        <div className='col-12 col-lg-6 order-lg-1 d-flex justify-content-center'>
+         <img src="/KCK.PNG" className='project-image' alt='project screenshot'/>
+        </div>
+        <div className='col-12 mt-4 col-lg-6 mt-lg-0 justify-content-center align-items-center align-content-center 
+         justify-items-center'>
+         <div className=' d-flex align-items-center align-content-center 
+         justify-items-center'>
+            <h1 className='text-white me-5'>KCK Onam</h1>
+            <div className='project-button ps-2 pt-3 pb-3 pe-2 d-flex align-content-center
+            align-items-center'>
+              <a href='https://www.kckonam.com/' className='text-decoration-none'
+              style={{ all:'unset' }} target='_blank'>
+               <i class="fa-solid fa-link me-2"></i>
+                <span>Live Site</span>
+              </a>            
+            </div> 
+        </div>
+            <p className='text-white'><span className='fw-bold'>Kckonam</span> is a sleek, modern website showcasing creative design & curated content.
+It features responsive layouts that ensure seamless viewing across desktop and mobile devices.
+The site emphasizes clarity and aesthetic consistency, using clean typography and harmonious color schemes
+            </p>
+            <div className='d-flex tech-stack'>
+                {
+                    techStackTailwind.map((tech,index)=>(
+                        <div className='tech-button ps-2 pt-3 pb-3 pe-2 me-2 d-flex align-content-center
+                          align-items-center' key={index}>
+                         {tech}
+                        </div> 
+                    ))
+                }
+            </div>
+        </div>  
+     </div>  
+
+     {/* Nobi Corporation */}
+     <div className='row mt-5'>
+        <div className='col-12 col-lg-6 d-flex justify-content-center'>
+         <img src="/Nobi.PNG" className='project-image order-lg-2' alt='project screenshot'/>
+        </div>
+        <div className='col-12 mt-4 col-lg-6 mt-lg-0 justify-content-center align-items-center align-content-center 
+         justify-items-center'>
+         <div className=' d-flex align-items-center align-content-center 
+         justify-items-center'>
+            <h1 className='text-white me-5'>Nobi Corporation</h1>
+            <div className='project-button ps-2 pt-3 pb-3 pe-2 d-flex align-content-center
+            align-items-center'>
+              <a href='https://www.nobicorporation.com/' className='text-decoration-none'
+              style={{ all:'unset' }} target='_blank'>
+                <i class="fa-solid fa-link me-2"></i>
+                <span>Live Site</span>
+                </a>
+            </div> 
+        </div>
+            <p className='text-white'>
+               <span className='fw-bold'>Nobo Coporation</span> is a professionally built site presenting Nobi Corporation with clean layout and clear branding.
+            </p>
+            <div className='d-flex'>
+                {
+                    techStackTailwind.map((tech,index)=>(
+                        <div className='tech-button ps-2 pt-3 pb-3 pe-2 me-2 d-flex align-content-center
+                          align-items-center' key={index}>
+                         {tech}
+                        </div> 
+                    ))
+                }
+            </div>
+        </div>
+     </div> 
       {/* Attendance Portal Project */}
      <div className='row'>
         <div className='col-12 col-lg-6 order-lg-1 d-flex justify-content-center'>
@@ -39,11 +115,12 @@ function Project() {
             <h1 className='text-white me-5'>Attendance Portal</h1>
             <div className='project-button ps-2 pt-3 pb-3 pe-2 d-flex align-content-center
             align-items-center'>
-            <a href='https://attendanceportalcapstone.netlify.app/' className='text-decoration-none'
+              <a href='https://attendanceportalcapstone.netlify.app/' className='text-decoration-none'
               style={{ all:'unset' }} target='_blank'>
-                <i class="fa-solid fa-link me-2"></i>Demo
-            </a>
-            </div> 
+               <i class="fa-solid fa-link me-2"></i>
+                <span>Demo</span>
+              </a>            
+            </div>  
         </div>
             <p className='text-white'>A responsive web application for managing and tracking attendance digitally. 
                 It provides role-based access for admins, teachers, and students, ensuring secure and efficient record keeping. 
@@ -75,13 +152,11 @@ function Project() {
                 </a>
               </div>
             </div>
-        </div>
-    
-      
+        </div> 
      </div>  
 
      {/* Axios CRUD */}
-      <div className='row mt-5'>
+     <div className='row mt-5'>
         <div className='col-12 col-lg-6 d-flex justify-content-center'>
          <img src="/crud.PNG" className='project-image order-lg-2' alt='project screenshot'/>
         </div>
@@ -94,7 +169,9 @@ function Project() {
             align-items-center'>
               <a href='https://axioscrudoperations.netlify.app/' className='text-decoration-none'
               style={{ all:'unset' }} target='_blank'>
-                <i class="fa-solid fa-link me-2"></i>Demo</a>
+                <i class="fa-solid fa-link me-2"></i>
+                <span>Demo</span>
+                </a>
             </div> 
         </div>
             <p className='text-white'>Axios CRUD is a simple React application that demonstrates Create, Read, Update, and Delete operations using Axios for API communication. 
@@ -138,7 +215,8 @@ function Project() {
             align-items-center'>
               <a href='https://charming-kangaroo-686016.netlify.app/' className='text-decoration-none'
               style={{ all:'unset' }} target='_blank'>
-               <i class="fa-solid fa-link me-2"></i>Demo
+               <i class="fa-solid fa-link me-2"></i>
+                <span>Demo</span>
               </a>            
             </div> 
         </div>
@@ -169,7 +247,7 @@ function Project() {
       </div>
 
       {/* React Router Demo */}
-        <div className='row mt-5'>
+      <div className='row mt-5'>
         <div className='col-12 col-lg-6 d-flex justify-content-center order-lg-1'>
          <img src="/router.PNG" className='project-image ' alt='project screenshot'/>
         </div>
@@ -182,7 +260,8 @@ function Project() {
             align-items-center'>
               <a href='https://cerulean-pasca-12bc54.netlify.app/' className='text-decoration-none'
               style={{ all:'unset' }} target='_blank'>
-               <i class="fa-solid fa-link me-2"></i>Demo
+               <i class="fa-solid fa-link me-2"></i>
+               <span>Demo</span>
               </a>            
             </div> 
         </div>
@@ -227,7 +306,8 @@ function Project() {
             align-items-center'>
               <a href='https://shoppingpagecontextapi.netlify.app/' className='text-decoration-none'
               style={{ all:'unset' }} target='_blank'>
-               <i class="fa-solid fa-link me-2"></i>Demo
+               <i class="fa-solid fa-link me-2"></i>
+                <span>Demo</span>
               </a>            
             </div> 
         </div>
