@@ -39,7 +39,7 @@ function Home() {
           <div className='d-flex justify-items-center justify-content-center'>
             <Button variant="info" className='pointer' id='resume-download'>
               <span>
-                <a href='https://drive.google.com/file/d/1dFphAbBgpcpiUbKrom1lMcU5UBdrOB1L/view?usp=drive_link' target='_blank' download>
+                <a href='https://drive.google.com/file/d/1E2DdK--3CGFSf0MhfDONbHaj3yZUi5o6/view' target='_blank' download>
                 Download Resume
                 </a>
               </span>
